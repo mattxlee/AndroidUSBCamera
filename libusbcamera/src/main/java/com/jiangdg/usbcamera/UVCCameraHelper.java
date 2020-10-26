@@ -53,15 +53,15 @@ public class UVCCameraHelper {
     private Activity mActivity;
     private CameraViewInterface mCamView;
 
-    private UVCCameraHelper() {
+    public UVCCameraHelper() {
     }
 
-    public static UVCCameraHelper getInstance() {
-        if (mCameraHelper == null) {
-            mCameraHelper = new UVCCameraHelper();
-        }
-        return mCameraHelper;
-    }
+    // public static UVCCameraHelper getInstance() {
+    //     if (mCameraHelper == null) {
+    //         mCameraHelper = new UVCCameraHelper();
+    //     }
+    //     return mCameraHelper;
+    // }
 
     public void closeCamera() {
         if (mCameraHandler != null) {
